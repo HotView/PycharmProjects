@@ -1,0 +1,16 @@
+.idea
+node_modules
+*.avi
+*.pyc
+OpenCV_Computer_Vision_with_Python-libre.pdf
+*screen-shot.png
+screenshot*.png
+*.mov
+*-screenshot.png
+*.xlsx
+150422-速度XY生データ.txt
+*.jpg
+Thumbs.db
+150428-akk2015
+*.docx
+*.m4v
