@@ -1,0 +1,224 @@
+<Graph version="3.0">
+  <Table rowHeaderWidth="0" colHeaderHeight="0">
+    <Rows>
+      <Cell r="0.5" labelHTML="" s="6249.999999999997"/>
+    </Rows>
+    <Cols>
+      <Cell r="0.5" labelHTML="" s="2499.999999999998"/>
+    </Cols>
+  </Table>
+  <Tag x="900" y="2537.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Dot x="1350" y="1975"/>
+  <Tag x="900" y="2287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>mirror&lt;/FONT>&lt;/P>"/>
+  <Dot x="900" y="2062.5"/>
+  <Tag x="387.5" y="212.5" w="475" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>导入照片，根据参考板辨识相机位置&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="387.5" w="250" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeFeatures&lt;/FONT>&lt;/P>"/>
+  <Dot x="1125" y="1925"/>
+  <Dot x="525" y="1925"/>
+  <Dot x="675" y="775"/>
+  <Dot x="1400" y="475"/>
+  <Tag x="1100" y="387.5" w="250" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeFeatures&lt;/FONT>&lt;/P>"/>
+  <Tag x="200" y="3037.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>TextureMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="200" y="3162.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>clip&lt;/FONT>&lt;/P>"/>
+  <Dot x="50" y="1375"/>
+  <Tag x="237.5" y="300" w="225" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>开度 1&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Dot x="900" y="1875"/>
+  <Tag x="475" y="1712.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="550" y="3037.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>TextureMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="250" y="3537.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>joint&lt;/FONT>&lt;/P>"/>
+  <Dot x="775" y="1375"/>
+  <Dot x="1400" y="775"/>
+  <Dot x="50" y="775"/>
+  <Tag x="1137.5" y="2212.5" w="175" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>对称尾门模型&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="787.5" y="2212.5" w="175" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>对称车身模型&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="987.5" y="2662.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Dot x="775" y="775"/>
+  <Tag x="1075" y="3712.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>strut&lt;/FONT>&lt;/P>"/>
+  <Tag x="900" y="3162.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>clip&lt;/FONT>&lt;/P>"/>
+  <Tag x="162.5" y="687.5" w="225" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>调整相机位置&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Dot x="1350" y="300"/>
+  <Tag x="550" y="3162.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>clip&lt;/FONT>&lt;/P>"/>
+  <Dot x="675" y="475"/>
+  <Tag x="950" y="1050" w="250" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>Localization&lt;/FONT>&lt;/P>"/>
+  <Tag x="1100" y="862.5" w="500" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeStructureFromKnownPoses&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="687.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>adjust&lt;/FONT>&lt;/P>"/>
+  <Dot x="275" y="1975"/>
+  <Tag x="287.5" y="2662.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="475" y="1587.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Dot x="500" y="3625"/>
+  <Dot x="1350" y="2062.5"/>
+  <Tag x="900" y="3037.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>TextureMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="1100" y="1287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>expand&lt;/FONT>&lt;/P>"/>
+  <Dot x="250" y="3625"/>
+  <Tag x="1125" y="2037.5" w="400" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>在参考板参考系下进行三维重建&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="1112.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="425" y="87.5" w="400" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>校准镜头畸变&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="637.5" y="2662.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Dot x="1200" y="3625"/>
+  <Tag x="550" y="2412.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="550" y="2787.5" w="250" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ReconstructMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="1312.5" y="2662.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="725" y="212.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>import&lt;/FONT>&lt;/P>"/>
+  <Tag x="1387.5" y="3537.5" w="175" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>球铰识别&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1287.5" y="1837.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="900" y="2412.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="1100" y="687.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>adjust&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="562.5" w="500" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeStructureFromKnownPoses&lt;/FONT>&lt;/P>"/>
+  <Tag x="1312.5" y="3712.5" w="275" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>生成电杆附近截面图&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="900" y="2787.5" w="250" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ReconstructMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="2412.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="225" y="1050" w="250" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>Localization&lt;/FONT>&lt;/P>"/>
+  <Tag x="725" y="2062.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>align&lt;/FONT>&lt;/P>"/>
+  <Tag x="200" y="2787.5" w="250" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ReconstructMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="200" y="2537.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="837.5" y="3287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="1100" y="1462.5" w="500" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeStructureFromKnownPoses&lt;/FONT>&lt;/P>"/>
+  <Tag x="550" y="2912.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>RefineMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="1400" y="300" w="75" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>...&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="112.5" y="2212.5" w="125" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>车身模型&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1387.5" y="3412.5" w="175" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>关门位置识别&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="1462.5" w="500" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeStructureFromKnownPoses&lt;/FONT>&lt;/P>"/>
+  <Tag x="900" y="2912.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>RefineMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="2787.5" w="250" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ReconstructMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="612.5" y="3287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="1200" y="3537.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>joint&lt;/FONT>&lt;/P>"/>
+  <Tag x="1400" y="1975" w="75" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>...&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="862.5" w="500" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeStructureFromKnownPoses&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="3712.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>strut&lt;/FONT>&lt;/P>"/>
+  <Tag x="725" y="87.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>calibrate&lt;/FONT>&lt;/P>"/>
+  <Tag x="1437.5" y="2287.5" w="175" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>加入镜像照片&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="2287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>mirror&lt;/FONT>&lt;/P>"/>
+  <Tag x="1437.5" y="1837.5" w="75" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>渲染&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1312.5" y="1287.5" w="225" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>加入无参考板照片&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1125" y="2087.5" w="400" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>在铰链轴参考系下进行三维重建&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1200" y="1712.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="525" y="987.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="1312.5" y="3287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="1200" y="1587.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="462.5" y="2212.5" w="125" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>尾门模型&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="3162.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>clip&lt;/FONT>&lt;/P>"/>
+  <Tag x="1100" y="562.5" w="500" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>ComputeStructureFromKnownPoses&lt;/FONT>&lt;/P>"/>
+  <Tag x="200" y="2412.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="550" y="2537.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="375" y="1287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>expand&lt;/FONT>&lt;/P>"/>
+  <Tag x="500" y="3412.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>close&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="2537.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="200" y="2912.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>RefineMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="950" y="3537.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>joint&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="2912.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>RefineMesh&lt;/FONT>&lt;/P>"/>
+  <Dot x="325" y="3325"/>
+  <Tag x="1100" y="262.5" w="225" h="75" shape="none" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>开度 2&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="987.5" w="300" h="75" shape="rounded" icon="none" fill="13434828" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>openMVG2openMVS&lt;/FONT>&lt;/P>"/>
+  <Tag x="562.5" y="1837.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="1200" y="3412.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>close&lt;/FONT>&lt;/P>"/>
+  <Tag x="137.5" y="3287.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>render&lt;/FONT>&lt;/P>"/>
+  <Tag x="1250" y="3037.5" w="200" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>TextureMesh&lt;/FONT>&lt;/P>"/>
+  <Tag x="425" y="2062.5" w="400" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;RIGHT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>辨识车对称面和铰链轴&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Tag x="1412.5" y="3162.5" w="125" h="75" shape="none" icon="none" fill="16777215" labelHTML="&lt;P ALIGN=&quot;LEFT&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#999999&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>&lt;B>剪裁模型&lt;/B>&lt;/FONT>&lt;/P>"/>
+  <Dot x="1050" y="3325"/>
+  <Tag x="525" y="1112.5" w="275" h="75" shape="rounded" icon="none" fill="13434879" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>DensifyPointCloud&lt;/FONT>&lt;/P>"/>
+  <Tag x="500" y="3537.5" w="175" h="75" shape="rounded" icon="none" fill="16777164" labelHTML="&lt;P ALIGN=&quot;CENTER&quot;>&lt;FONT FACE=&quot;Microsoft Yahei&quot; SIZE=&quot;24&quot; COLOR=&quot;#000000&quot; LETTERSPACING=&quot;0&quot; KERNING=&quot;0&quot;>joint&lt;/FONT>&lt;/P>"/>
+  <Dot x="950" y="3625"/>
+  <Link start="48" end="92" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="31" end="56" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-100"/>
+  <Link start="89" end="103" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-25"/>
+  <Link start="51" end="5" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="105" end="89" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="110" end="38" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="10" end="90" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="35" end="61" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="175"/>
+  <Link start="27" end="97" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="25"/>
+  <Link start="8" end="31" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="12" end="104" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-18.75"/>
+  <Link start="78" end="51" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="62" end="96" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="101" end="44" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="56" end="34" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="0" end="24" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="16" end="7" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-75"/>
+  <Link start="63" end="62" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-50"/>
+  <Link start="93" end="13" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="137.5"/>
+  <Link start="51" end="10" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="84" end="6" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-12.5"/>
+  <Link start="76" end="60" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-75"/>
+  <Link start="96" end="11" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="72" end="98" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="55" end="33" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="16" end="102" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="65" end="15" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="108" end="103" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="25"/>
+  <Link start="33" end="101" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="75"/>
+  <Link start="80" end="59" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="95" end="72" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-50"/>
+  <Link start="61" end="48" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-62.5"/>
+  <Link start="9" end="90" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-100"/>
+  <Link start="92" end="46" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="70" end="35" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-50"/>
+  <Link start="90" end="55" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="59" end="95" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="7" end="61" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="75"/>
+  <Link start="111" end="26" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="37.5"/>
+  <Link start="6" end="61" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-175"/>
+  <Link start="54" end="0" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="60" end="93" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="66" end="17" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="37" end="16" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="97" end="111" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="98" end="105" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="109" end="93" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="5" end="56" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="103" end="74" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="92" end="49" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-50"/>
+  <Link start="76" end="85" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="75"/>
+  <Link start="49" end="66" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="61" end="91" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-62.5"/>
+  <Link start="32" end="41" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="2" end="54" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="61" end="80" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="3" end="39" type="elbowHorizontal" stroke="10066329" weight="4" dashed="true" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="12" end="18" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="25"/>
+  <Link start="17" end="30" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="19" end="25" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="33" end="32" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-75"/>
+  <Link start="11" end="12" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="44" end="41" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="85" end="109" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="25" end="33" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="112.5"/>
+  <Link start="71" end="40" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="42" end="77" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="37.5"/>
+  <Link start="87" end="84" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="41" end="19" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="137.5"/>
+  <Link start="27" end="108" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-25"/>
+  <Link start="61" end="2" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="74" end="47" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="27" end="64" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-18.75"/>
+  <Link start="47" end="26" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-37.5"/>
+  <Link start="0" end="58" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-50"/>
+  <Link start="18" end="42" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="12" end="99" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-12.5"/>
+  <Link start="38" end="77" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-37.5"/>
+  <Link start="65" end="87" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="50"/>
+  <Link start="34" end="76" type="elbowVertical" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="41" end="65" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="25"/>
+  <Link start="95" end="50" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="18.75"/>
+  <Link start="94" end="110" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="30" end="94" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-25"/>
+  <Link start="40" end="27" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="30" end="73" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="18.75"/>
+  <Link start="89" end="86" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="18.75"/>
+  <Link start="58" end="71" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="15" end="61" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-87.5"/>
+  <Link start="91" end="63" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="0"/>
+  <Link start="55" end="20" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-100"/>
+  <Link start="51" end="29" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-312.5"/>
+  <Link start="99" end="94" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="37.5"/>
+  <Link start="20" end="9" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="34" end="8" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="-100"/>
+  <Link start="1" end="61" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="-262.5"/>
+  <Link start="63" end="36" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="70" end="37" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="50"/>
+  <Link start="21" end="76" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="112.5"/>
+  <Link start="13" end="21" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="none" turningControl="0"/>
+  <Link start="84" end="53" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="31.25"/>
+  <Link start="93" end="70" type="elbowHorizontal" stroke="0" weight="2" dashed="false" startArrow="none" endArrow="triangleBlack" turningControl="25"/>
+</Graph>
