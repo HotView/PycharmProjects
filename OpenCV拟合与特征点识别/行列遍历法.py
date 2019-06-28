@@ -50,6 +50,6 @@ def findFeatur(points):
     return Fpoints
 
 Fpoints = findFeatur(points)
-cv2.circle(img,(Fpoints[0][1],Fpoints[0][0]),2,[0,0,255] ,-1)
+cv2.circle(img,(Fpoints[0][1],Fpoints[0][0]),4,[0,0,255] ,-1)
 cv2.imshow("origin",img)
 cv2.waitKey(0)

@@ -33,7 +33,7 @@ def Drawing():
     plt.title("media2")
     plt.axis("off")
     plt.show()
-img = cv2.imread('laser02.jpg')
+img = cv2.imread('hand01.jpg')
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 threval = 125
 ret,thresh = cv2.threshold(gray,threval,255,cv2.THRESH_BINARY_INV)

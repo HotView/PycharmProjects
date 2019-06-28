@@ -72,20 +72,28 @@ def StegerLine(img):
                 hessian[1, 0] = Iyx[j, i]
                 hessian[1, 1] = Iyy[j, i]
                 ret, eigenVal, eigenVec = cv2.eigen(hessian)
+                lambda1 = 0.
+                lambda2 = 0.
                 nx, ny, fmaxD = 0.0, 0., 0.
                 if ret:
                     # print(eigenVal.shape,eigenVec.shape)
-                    if np.abs(eigenVal[0, 0] >= eigenVal[1, 0]):
+                    if np.abs(eigenVal[0, 0]) >= np.abs(eigenVal[1, 0]):
+                        lambda1 = eigenVal[1,0]
+                        lambda2 = eigenVal[0,0]
                         nx = eigenVec[0, 0]
                         ny = eigenVec[0, 1]
                         famxD = eigenVal[0, 0]
                     else:
+                        lambda1 = eigenVal[0, 0]
+                        lambda2 = eigenVal[1, 0]
                         nx = eigenVec[1, 0]
                         ny = eigenVec[1, 1]
                         famxD = eigenVal[1, 0]
+                    #if lambda1<15 and lambda2<-50:
                     t = -(nx * Ix[j, i] + ny * Iy[j, i]) / (
-                            nx * nx * Ixx[j, i] + 2 * nx * ny * Ixy[j, i] + ny * ny * Iyy[j, i])
+                                nx * nx * Ixx[j, i] + 2 * nx * ny * Ixy[j, i] + ny * ny * Iyy[j, i])
                     if np.abs(t * nx) <= 0.5 and np.abs(t * ny) <= 0.5:
+                            #CenterPoint.append([i, j])
                         CenterPoint.append([i, j])
     cv2.namedWindow("Steger_origin", 0)
     new_img = np.zeros((row,col),np.uint8)
@@ -107,7 +115,7 @@ def test02(filename):
     print("spend", (cv2.getTickCount() - start) / cv2.getTickFrequency())
     cv2.waitKey(0)
 if __name__ == '__main__':
-    fn = "laser-v.jpg"
+    fn = "center-v.jpg"
     test02(fn)
 
 

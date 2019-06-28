@@ -45,35 +45,40 @@ def Hessian(img,sigma= 8,size= 3):
     Dyy = cv2.filter2D(img, -1, DGaussyy)
     print("Dx.shape",Dx.shape)
     return Dx,Dy,Dxx,Dxy,Dyy
-def Centerline(img,sigma):
+def Centerline(img,sigma,k):
     Dx,Dy,Dxx,Dxy,Dyy = Hessian(img,sigma)
     eigenvalue1, eigenvalue2, eigenvectorx, eigenvectory = Eig2image(Dxx,Dxy,Dyy)
     t =  -(Dx*eigenvectorx + Dy*eigenvectory)/(Dxx* eigenvectorx*eigenvectorx + 2*Dxy*eigenvectorx*eigenvectory + Dyy*eigenvectory*eigenvectory );
     px = t*eigenvectorx
     py = t*eigenvectory
 
-    c = np.abs(px)<=0.5
-    g = np.abs(py)<=0.5
+    c = np.abs(px)<=k
+    g = np.abs(py)<=k
+    print("px",px)
+    print("py",py)
     flags = np.bitwise_and(c,g)
     return flags
 def nothing(pos):
     newimg = img.copy()
     thval = cv2.getTrackbarPos("thresh","origin")
     sigma = cv2.getTrackbarPos("sigma","origin")
+    k = cv2.getTrackbarPos("k","origin")
+    k = k/10.0
     gray = cv2.cvtColor(newimg, cv2.COLOR_BGR2GRAY)
     np.savetxt("test.txt",gray,fmt= "%.3d")
-    ret,gray = cv2.threshold(gray,thval,255,cv2.THRESH_BINARY)
+    ret,thresh = cv2.threshold(gray,thval,255,cv2.THRESH_BINARY)
     gray = gray.astype(float)
-    gray = gray / 255
+    #gray = gray / 255
     start = cv2.getTickCount() 
-    flags = Centerline(gray, sigma)
+    flags = Centerline(gray, sigma, k)
     print((cv2.getTickCount()-start)/cv2.getTickFrequency())
     print("dj", flags)
-    flags = np.bitwise_and(flags,gray>0)
+    flags = np.bitwise_and(flags,thresh>0)
     newimg[flags, :] = [0, 255, 0]
     cv2.imshow("res", newimg)
 cv2.namedWindow("res",0)
 img = cv2.imread("laser-v.jpg")
+#img= img[:,1500:2500,:]
 #cv2.namedWindow("origin",0)
 #gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 img = cv2.GaussianBlur(img,(5,5),1)
@@ -82,6 +87,7 @@ cv2.imshow("origin",img)
 #gray = gray/255
 cv2.createTrackbar("sigma","origin",0,20,nothing)
 cv2.createTrackbar("thresh","origin",0,255,nothing)
+cv2.createTrackbar("k","origin",1,10,nothing)
 
 cv2.waitKey(0)
 

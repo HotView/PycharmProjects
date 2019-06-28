@@ -3,10 +3,19 @@
 # Author: Liu
 import cv2
 import numpy as np
-
+def getLines(gray):
+    minLineLength = 15
+    maxLineGap = 5
+    lines = cv2.HoughLinesP(gray, 1.0, np.pi/180, 10, minLineLength=minLineLength, maxLineGap=maxLineGap)
+    return lines
+def drawLine(lines,img):
+    for line in lines:
+        line = line[0]
+        cv2.line(img, (line[0], line[1]), (line[2], line[3]), 255)
 
 def Gravity(img):
     row,col,chanel = img.shape
+    lineimage = np.zeros((row,col),dtype=np.uint8)
     gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
     points= []
     newimage = np.zeros((row,col),np.uint8)
@@ -21,7 +30,10 @@ def Gravity(img):
         img[p[0],p[1],:] = [0,255,0]
     cv2.namedWindow("origin",0)
     cv2.namedWindow("centerLine",0)
+    lines = getLines(newimage)
+    drawLine(lines,lineimage)
     cv2.imshow("origin",img)
+    cv2.imshow("lineimage",lineimage)
     cv2.imshow("centerLine",newimage)
 def GravityPlus(img):
     row, col, chanel = img.shape
