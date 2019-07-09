@@ -4,7 +4,7 @@ import glob
 import os.path
 
 
-with np.load('camera.npz') as X:
+with np.load('pose.npz') as X:
     mtx, dist= [X[i] for i in ('mtx','dist')]
 img = cv2.imread("image/left12.jpg")
 h,w = img.shape[:2]

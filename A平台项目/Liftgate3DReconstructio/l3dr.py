@@ -398,7 +398,7 @@ class MeshRenderer(object):
                      znear=0.1, zfar=10, ortho=False, depth=False,
                      wireframe=False, line_width=1):
 
-        # set camera intrinsic parameters
+        # set pose intrinsic parameters
         w, h = image_size
         f = focal_length
         pyglet.gl.glViewport(0, 0, w, h)
@@ -416,7 +416,7 @@ class MeshRenderer(object):
                         0,         0,   (znear + zfar) / (zfar - znear), 1,
                         0,         0, 2 * znear * zfar / (znear - zfar), 0))
 
-        # set camera extrinsic parameters
+        # set pose extrinsic parameters
         M = np.eye(4)
         M[:3,:3] = rotation
         M[:3,3] = -np.dot(rotation, center)
@@ -1106,7 +1106,7 @@ def calibrate_main(camerafile, paths, cross_validation=False,
         (2, -1)).T, np.zeros(((ncol + 1) * (nrow + 1), 1))]).astype(np.float32)
     object_points = [chessboard_corners_3d] * len(image_points)
 
-    print('Calibrating camera...')
+    print('Calibrating pose...')
     calibrate_flags = cv2.CALIB_RATIONAL_MODEL | cv2.CALIB_THIN_PRISM_MODEL
     rmse, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(
             object_points, image_points, image_size,
@@ -1515,7 +1515,7 @@ def expand_main(infile, plyfile, outfile=None,
             if os.path.exists(filename):
                 raw = cv2_imread(filename)
 
-                # optimize camera position
+                # optimize pose position
                 if optimize:
                     (extrinsic['value']['rotation'],
                      extrinsic['value']['center']) = refine_camera(
@@ -1523,7 +1523,7 @@ def expand_main(infile, plyfile, outfile=None,
                             extrinsic['value']['rotation'],
                             extrinsic['value']['center'])
 
-                # validate camera position
+                # validate pose position
                 image = render_points(
                             points, image_size, focal_length,
                             extrinsic['value']['rotation'],
@@ -2376,9 +2376,9 @@ def main():
     subparser.add_argument('-c', '--cross-validation', action='store_true',
                            help='run cross validation after calibration')
     subparser.add_argument('camerafile',
-                           help='path of output camera.json')
+                           help='path of output pose.json')
     subparser.add_argument('paths', nargs='+',
-                           help='path of images to calibrate camera')
+                           help='path of images to calibrate pose')
 
     subparser = subparsers.add_parser('import')
     subparser.add_argument('-s', '--stage', metavar='N', type=int, default=10,
@@ -2388,7 +2388,7 @@ def main():
     subparser.add_argument('-m', '--mirror', action='store_true',
                            help='apply mirror operation in run.bat')
     subparser.add_argument('camerafile',
-                           help='path of input camera.json')
+                           help='path of input pose.json')
     subparser.add_argument('paths', nargs='+',
                            help='path of images to reconstruct liftgate')
 
@@ -2403,7 +2403,7 @@ def main():
                            type=float, default=0.4,
                            help='PCC threshold to accept (default = %(default)s)')
     subparser.add_argument('-o', '--optimize', action='store_true',
-                           help='refine camera position')
+                           help='refine pose position')
     subparser.add_argument('infile',
                            help='path of input sfm_data.json')
     subparser.add_argument('plyfile',

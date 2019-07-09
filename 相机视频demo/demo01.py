@@ -10,7 +10,7 @@ cameraCapture = cv2.VideoCapture(0)
 cv2.namedWindow("MyWindow")
 cv2.setMouseCallback("MyWindow",onMouse)
 
-print("Showing camera feed Click window or press any keys to stop.")
+print("Showing pose feed Click window or press any keys to stop.")
 
 sucess,frame = cameraCapture.read()
 

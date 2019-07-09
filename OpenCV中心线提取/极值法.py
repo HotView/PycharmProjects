@@ -9,7 +9,7 @@ def Extreme(img):
     points= []
     newimage = np.zeros((row,col),np.uint8)
     for i in range(col):
-        Pmax = np.max(gray[:,i])
+        #Pmax = np.max(gray[:,i])
         Prow = np.argmax(gray[:,i])
         points.append([Prow,i])
     for p in points:
@@ -19,6 +19,6 @@ def Extreme(img):
     cv2.namedWindow("centerLine",0)
     cv2.imshow("origin",img)
     cv2.imshow("centerLine",newimage)
-img = cv2.imread("laser-v.jpg")
+img = cv2.imread("image/laser-v.jpg")
 Extreme(img)
 cv2.waitKey(0)

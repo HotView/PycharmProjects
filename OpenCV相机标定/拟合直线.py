@@ -26,6 +26,4 @@ def plot_test():
     y2 = A2*x2*x2+B2*x2+C2
     plt.plot(x2,y2,'b')
     plt.show()
-
-
 plot_test()
