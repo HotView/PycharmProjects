@@ -10,9 +10,11 @@ def nothing(val):
     print(points1)
     for point in points1:
         print("point",point[0])
-        cv2.circle(newimg,(point[0][0],point[0][1]),4,[0,0,255],-1 )
+        cv2.putText(newimg, "[{:.2f},{:.2f}]".format(point[0][0], point[0][1]), (int(point[0][0]-20),int(point[0][1]-10)),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2, lineType=cv2.LINE_8)
+        cv2.circle(newimg,(point[0][0],point[0][1]),5,[0,0,255],-1 )
     cv2.imshow("res",newimg)
-img = cv2.imread("center-line.jpg")
+img = cv2.imread("center-v1.jpg")
 print(img.shape)
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 Ix = cv2.Scharr(gray, cv2.CV_32F, 1, 0)

@@ -290,7 +290,7 @@ def ZhangSuen(img):
     flags = roi>0
     roi[flags] = 255
     return roi
-img =  cv2.imread("hand0101.jpg")
+img =  cv2.imread("image/hand0101.jpg")
 gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)
 #cv2.imshow("Origin",gray)
 ret,thresh = cv2.threshold(gray,125,1,cv2.THRESH_BINARY)

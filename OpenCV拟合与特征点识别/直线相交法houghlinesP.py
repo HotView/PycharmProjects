@@ -54,15 +54,17 @@ def drawLine(lines,img):
         line2 = lines[(i+1)%3][0]
         para1 = getPara(line1)
         if i==0:
-            cv2.line(img, (line[0], line[1]), (line[2]+int((-para1[1]*100/para1[0])), line[3]+100), color[i])
+            cv2.line(img, (line[0], line[1]), (line[2]+int((-para1[1]*100/para1[0])), line[3]+100), color[i],2)
         elif i == 2:
-            cv2.line(img, (line[0]+ int((-para1[1] * 100 / para1[0])), line[1]+100), (line[2] , line[3]), color[i])
+            cv2.line(img, (line[0]+ int((-para1[1] * 100 / para1[0])), line[1]+100), (line[2] , line[3]), color[i],2)
         else:
-            cv2.line(img, (line[0]-700, line[1]+int((para1[0] * 700 / para1[1]))), (line[2], line[3]), color[i])
+            cv2.line(img, (line[0]-700, line[1]+int((para1[0] * 700 / para1[1]))), (line[2], line[3]), color[i],2)
         para2 = getPara(line2)
         p = getCross(para1,para2)
         print(p)
-        cv2.circle(img,(int(p[0]),int(p[1])),4,[255,0,255],2 )
+        cv2.putText(img, "[{:.3f},{:.3f}]".format(p[0], p[1]), (int(p[0])-10,int(p[1])-10),
+                    cv2.FONT_HERSHEY_SIMPLEX, 0.8, (255, 255,255), 2, lineType=cv2.LINE_8)
+        cv2.circle(img,(int(p[0]),int(p[1])),4,[255,0,255],3 )
     #cv2.circle(img, (int(p[1]), int(p[1])), 2, [0, 255, 0], -1)
 
 img = cv2.imread("test01.jpg")

@@ -77,7 +77,7 @@ def nothing(pos):
     newimg[flags, :] = [0, 255, 0]
     cv2.imshow("res", newimg)
 cv2.namedWindow("res",0)
-img = cv2.imread("laser-v.jpg")
+img = cv2.imread("image/laser-v.jpg")
 #img= img[:,1500:2500,:]
 #cv2.namedWindow("origin",0)
 #gray = cv2.cvtColor(img,cv2.COLOR_BGR2GRAY)

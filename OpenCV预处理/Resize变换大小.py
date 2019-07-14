@@ -7,6 +7,6 @@ def Resize(img,filename):
     print(c_row,c_col)
     res = cv2.resize(img,(c_col,c_row))
     cv2.imwrite("E:/PaperImage/"+filename,res)
-filename = ""
+filename = "laser-v02.jpg"
 img = cv2.imread(filename)
 Resize(img,filename)
