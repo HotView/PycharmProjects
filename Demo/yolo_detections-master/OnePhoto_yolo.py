@@ -30,18 +30,17 @@ img = cv2.imread('sample_dog.jpg')
 img.shape
 
 result = tfnet.return_predict(img)
+print(result)
 
-t1 = (result[0]['topleft']['x'],result[0]['topleft']['y']) #top left
-b1 = (result[0]['bottomright']['x'],result[0]['bottomright']['y']) # bottomright
-
-labl = result[0]['label']
-img = cv2.rectangle(img, t1, b1,(0.,255,0),7)
-img = cv2.putText(img,labl, t1,cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
-
+for x in result:
+        t1 = (x['topleft']['x'], x['topleft']['y'])  # top left
+        b1 = (x['bottomright']['x'], x['bottomright']['y'])  # bottomright
+        labl = x['label']
+        img = cv2.rectangle(img, t1, b1,(0.,255,0),2)
+        img = cv2.putText(img,labl, t1,cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 255), 2)
 img = cv2.cvtColor(img,cv2.COLOR_BGR2RGB)
 print("--------------")
-print(type(img))
-print(img)
+print(img.shape)
 plt.imshow(img)
 plt.show()
 

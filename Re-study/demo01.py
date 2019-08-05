@@ -1,5 +1,3 @@
-# -*- coding:latin -*-
-latin = '?????????????????ÄÄÄ'
 import re
 a = 'acjfkjfd'
 b = 'ac'
@@ -9,4 +7,3 @@ e = 'acdddd'
 
 print(re.match('acd+',a))
 
-print(latin)

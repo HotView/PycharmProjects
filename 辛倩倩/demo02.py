@@ -1,0 +1,5 @@
+a= set()
+a.add((1,0,1))
+a.add((1,1,0))
+print(a)
+help(dict.get)

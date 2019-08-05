@@ -10,7 +10,11 @@
 1 1 4 3
 """
 ds=  [0,1,0,-1,0]
+res = False
 def dfs(Graph,cur_x,cuy_y,value,visit,depth):
+    if Graph[cur_x][cuy_y]==value:
+        res=True
+        return
     visit[cur_x][cuy_y] = 1
     print(Graph[cur_x][cuy_y],cur_x,cuy_y)
     depth = depth+1

@@ -2,4 +2,9 @@
 *.avi
 *.mp4
 *.weights
+*.params
+*.npz
+*.gz
+*.meta
+Tensorflow/CIFAR10/
 

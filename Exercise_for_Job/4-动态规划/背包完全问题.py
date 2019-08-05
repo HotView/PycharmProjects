@@ -3,19 +3,19 @@
 # 状态变量为F[i][j]，i为物品，j为背包容量
 # 背包的核心问题：F[j] = max(F[j],F[j-W[i]+V[i]])，即不选与选。
 class CompletePack():
-    def __init__(self,V =[1500, 2000, 3000] ,W= [1, 3, 4] ,target = 4):
-        self.V = V # Value
-        self.W = W  # Weight
+    def __init__(self,v =[1500, 2000, 3000] ,w_cost= [1, 3, 4] ,target = 4):
+        self.v = v # Value
+        self.w_cost = w_cost  # Weight
         self.len = len(V)
         self.target = target
         self.F = [0 for i in range(target+1)]
-    def Complte(self,cost, value):
+    def Complete(self,cost, value):
         for i in range(cost,self.target+1):
             self.F[i] = max(self.F[i],self.F[i-cost]+value)
     def solution(self):
         for i in range(self.len):
-            self.Complte(self.W[i],self.V[i])
-        return self.F
+            self.Complete(self.w_cost[i],self.v[i])
+        return self.F[self.target]
 W = [3,2,6,7,1,4,9,5]
 V = [6,3,5,8,3,1,6,9]
 target = 15
@@ -26,6 +26,6 @@ def CompleteBackPack(cost,value):
         F[i] = max(F[i],F[i-cost]+value)
 for i in range(n):
     CompleteBackPack(W[i],V[i])
-print(F)
+print(max(F))
 pack = CompletePack(V,W,target)
 print(pack.solution())
