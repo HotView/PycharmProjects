@@ -29,7 +29,7 @@ net = vgg(conv_arch)
 # for blk in net:
 #     X= blk(X)
 #     print(blk.name,"output hsape:\t",X.shape)
-lr, num_epochs, batch_size, ctx = 0.05, 5, 128, d2l.try_gpu()
+lr, num_epochs, batch_size, ctx = 0.05, 30, 128, d2l.try_gpu()
 net.initialize(init=init.Xavier(),ctx=ctx)
 trainer = gluon.Trainer(net.collect_params(), 'sgd', {'learning_rate': lr})
 train_iter, test_iter = d2l.load_data_fashion_mnist(batch_size, resize=96)

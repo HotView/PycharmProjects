@@ -1,10 +1,11 @@
-import bisect
-#import
-a = [6,5,6,5,1,5,5,4,12,56,5,5,61,23]
-print(a.index(5))
-index  = bisect.bisect(a,89)
-#print(a[index-1])
-print(len(a))
-print(index)
-bisect.insort(a,89)
-print(a)
+import heapq
+from collections import defaultdict
+
+def get_one_num(num):
+    res = 0
+    while(num):
+        if (num&1):
+            res = res+1
+        num=num>>1
+    return res
+print(get_one_num(4))

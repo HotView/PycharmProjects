@@ -1,5 +1,7 @@
-a= set()
-a.add((1,0,1))
-a.add((1,1,0))
+a = [1,2,3,4,5,6,7,8,9]
+a[2],a[4] =a[4],a[2]
 print(a)
-help(dict.get)
+a = "dfjksdjf"
+a[2] ='s'
+a= set()
+

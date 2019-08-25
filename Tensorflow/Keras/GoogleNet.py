@@ -51,7 +51,6 @@ def googlenet(input_data,n_classes):
 
     x = Flatten()(x)
     output = Dense(n_classes,activation='softmax')(x)
-
     model = Model(input,output)
     return model
 IN_PUT_SHAPE = (96,96,1)
@@ -60,20 +59,4 @@ K.clear_session()
 model = googlenet(IN_PUT_SHAPE,N_CLASSES)
 model.compile(optimizer = "adam", loss = "sparse_categorical_crossentropy")
 
-train_x= np.load("../fashion_mnist_96_X.npy")
-train_y = np.load("../fashion_mnist_y.npy")
-#print(train_iter.shape,test_iter.shape)
-N = len(train_y)
-batch_size = 500
-n_per = N//batch_size
-j = [1,5,3,2,4,7]
-for i in range(n_per-1):
-    j = np.random.choice([1,2,3,4,5])
-    X = train_x[i*batch_size:(i+1)*batch_size]
-    y = train_y[i*batch_size:(i+1)*batch_size]
-    print(y.shape)
-    print(y)
-    model.fit(X, y)
 model.summary()
-
-#SVG(model_to_dot(model).create(prog='dot',format= 'svg'))

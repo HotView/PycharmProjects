@@ -1,6 +1,8 @@
 ## 需要一个优先队列，需要一个距离字典，需要一个状态集合，父节点的列表。
 import heapq
 import math
+from collections import defaultdict
+graph = defaultdict(dict)
 graph = {
     "A":{"B":5,"C":1},
     "B":{"A":5,"C":2,"D":1},
@@ -10,31 +12,37 @@ graph = {
     "F":{"D":6}
 }
 def init_distance(graph,s):
-    distance = {s:0}
     for vertex in graph:
-        if vertex!=s:
-            distance[vertex] = math.inf
+        distance[vertex] = math.inf
+    distance[s] = 0
     return distance
 def dijkstra(graph,s):
     pqueue = []
-    heapq.heappush(pqueue,(0,s))
-    seen =set()
     parent = {s:None}
+    seen = set()
     distance = init_distance(graph, s)
+    heapq.heappush(pqueue, (0, s))
     while (len(pqueue)>0):
         pair = heapq.heappop(pqueue)
         vertex = pair[1]
-        dist = pair[0]
-        seen.add(s)
+        dist_v = pair[0]
+        if vertex  in seen:
+            continue
+        seen.add(vertex)
         for node in graph[vertex].keys():
-            if node not in seen:
-                if dist+graph[vertex][node]<distance[node]:
-                    distance[node] = distance[vertex]+graph[vertex][node]
+                if dist_v+graph[vertex][node]<distance[node]:
+                    distance[node] = dist_v+graph[vertex][node]
                     heapq.heappush(pqueue,(distance[node],node))
                     parent[node] = vertex
     return distance,parent
 parent,distance = dijkstra(graph,"A")
 print(parent)
 print(distance)
-
+n,m = list(map(int,input().split()))
+all_nodes = set()
+for i in range(m):
+    x,y,z = list(map(int,input().split()))
+    all_nodes.add(x)
+    all_nodes.add(y)
+    graph[x][y] = z
 

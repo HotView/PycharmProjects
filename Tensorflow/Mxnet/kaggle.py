@@ -6,11 +6,6 @@ import os
 import shutil
 import time
 demo = False
-if demo:
-    import zipfile
-    for f in ["test_2.7z"]:
-        with zipfile.ZipFile("E:/Download/"+f,'r')as z:
-            z.extractall("E:/Download/")
 
 def read_label_file(data_dir,label_file,train_dir,valid_ratio):
     with open(os.path.join(data_dir,label_file),'r') as f:
@@ -44,12 +39,18 @@ def reorg_train_valid(data_dir,train_dir,input_dir,n_train_per_label,idx_label):
             mkdir_if_not_exist([data_dir,input_dir,'valid',label])
             shutil.copy(os.path.join(data_dir,train_dir,train_file),
                         os.path.join(data_dir,input_dir,'valid',label))
+def reorg_test(data_dir,test_dir,input_dir):
+    mkdir_if_not_exist([data_dir,input_dir,"test","unknown"])
+    for test_file in os.listdir(os.path.join(data_dir,test_dir)):
+        shutil.copy(os.path.join(data_dir,test_dir,test_file),
+                    os.path.join(data_dir,input_dir,'test','unknown'))
 def reorg_cifar10_data(data_dir,label_file,train_dir,test_dir,input_dir,valid_ratio):
     n_train_per_label,idx_label = read_label_file(data_dir,label_file,train_dir,valid_ratio)
     reorg_train_valid(data_dir,train_dir,input_dir,n_train_per_label,idx_label)
+    reorg_test(data_dir,test_dir,input_dir)
 
-data_dir = "E:/Download"
-train_dir = "traindata"
+data_dir = "E:/Download/kaggle_cifar10"
+train_dir = "train"
 label_file = "trainLabels.csv"
 input_dir = "input"
 valid_ratio = 0.1
@@ -64,17 +65,20 @@ transform_train = gdata.vision.transforms.Compose([gdata.vision.transforms.Resiz
                                                     gdata.vision.transforms.RandomFlipLeftRight(),
                                                     gdata.vision.transforms.ToTensor(),
                                                     # 对图像的每个通道做标准化
-                                                    gdata.vision.transforms.Normalize([0.4914, 0.4822, 0.4465],[0.2023, 0.1994, 0.2010])])
+                                                    gdata.vision.transforms.Normalize([0.4914, 0.4822, 0.4465],
+                                                                                      [0.2023, 0.1994, 0.2010])])
 transform_test = gdata.vision.transforms.Compose([gdata.vision.transforms.ToTensor(),
-                                                  gdata.vision.transforms.Normalize([0.4914, 0.4822, 0.4465],[0.2023, 0.1994, 0.2010])])
+                                                  gdata.vision.transforms.Normalize([0.4914, 0.4822, 0.4465],
+                                                                                    [0.2023, 0.1994, 0.2010])])
 train_ds = gdata.vision.ImageFolderDataset(os.path.join(data_dir, input_dir, 'train'), flag=1)
 valid_ds = gdata.vision.ImageFolderDataset(os.path.join(data_dir, input_dir, 'valid'), flag=1)
 train_valid_ds = gdata.vision.ImageFolderDataset(os.path.join(data_dir, input_dir, 'train_valid'), flag=1)
-#test_ds = gdata.vision.ImageFolderDataset(os.path.join(data_dir, input_dir, 'test'), flag=1)
+test_ds = gdata.vision.ImageFolderDataset(os.path.join(data_dir, input_dir, 'test'), flag=1)
+
 train_iter = gdata.DataLoader(train_ds.transform_first(transform_train),batch_size, shuffle=True, last_batch='keep')
 valid_iter = gdata.DataLoader(valid_ds.transform_first(transform_test),batch_size, shuffle=True, last_batch='keep')
 train_valid_iter = gdata.DataLoader(train_valid_ds.transform_first(transform_train), batch_size, shuffle=True, last_batch='keep')
-#test_iter = gdata.DataLoader(test_ds.transform_first(transform_test),batch_size, shuffle=False, last_batch='keep')
+test_iter = gdata.DataLoader(test_ds.transform_first(transform_test),batch_size, shuffle=False, last_batch='keep')
 ## 定义模型 ResNet 模型
 def get_net(ctx):
     num_classes = 10
