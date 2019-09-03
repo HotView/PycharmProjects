@@ -1,12 +1,18 @@
-n,m,k= list(map(int,input().split()))
-s1 = input()
-s2 = input()
-res= 1
-same =0
-diff  =0
-for x,y in zip(s1,s2):
-    if x==y:
-        same+=1
+n = int(input())
+T = input()
+m = int(input())
+data = []
+for i in range(m):
+    data.append(input())
+lens = len(T)
+count = 0
+for x in data:
+    temp = x+x
+    len2 = len(temp)
+    if len2>lens:
+        if temp[:lens]==T:
+            count+=1
     else:
-        diff+=1
-print(pow(same,2))
+        if temp==T[:len2]:
+            count+=1
+print(count)

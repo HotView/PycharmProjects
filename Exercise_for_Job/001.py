@@ -1,20 +1,32 @@
 from collections import defaultdict
 hashmap = defaultdict
-def dfs(x,y,target):
-    st[x][y]=True
-    g[x][y]=6
-    dx = [-1,0,1,0]
-    dy = [0,1,0,-1]
+n = int(input())
+exp = input()
+data = exp.split()
+datanum = [data[i] for i in range(0,len(data),2)]
+dataop = [data[i] for i in range(1,len(data),2)]
+length = len(data)
+for i in range(100):
+    j = 1
+    while(j<length):
+        if data[j]=="*":
+            if int(data[j-1])>int(data[j+1]):
+                data[j+1],data[j-1] = data[j-1],data[j+1]
+        j=j+2
+    k = 1
+    while(k+2<length):
+        if k<2:
+            if data[k] == "+" and (data[k+2]!="+" or data[k+2]!="-"):
+                if int(data[k-1])>int(data[k+1]):
+                    data[k + 1], data[k - 1] = data[k - 1], data[k + 1]
+        else:
+            if data[k-2]=="+" and data[k] == "+" and (data[k+2]=="+" or data[k+2]=="-"):
+                if int(data[k-1])>int(data[k+1]):
+                    data[k + 1], data[k - 1] = data[k - 1], data[k + 1]
+        k=k+2
+res = ""
+for x in data:
+    res+=x+" "
+print(res)
 
-    for i in range(4):
-        a = x+dx[i]
-        b = y+dy[i]
-        if(a>=0 and a<5 and b>=0 and b<5 and g[a][b]==target and not st[a][b]):
-            dfs(a,b,target)
-g = []
-st =[[False]*5 for i in range(5)]
-for i in range(5):
-    g.append(list(map(int,input().split())))
-for i in range(5):
-    dfs()
 

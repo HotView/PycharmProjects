@@ -3,20 +3,20 @@ def quick_sort(array,left,right):
     if left>=right:
         return
         # return array
-    key = array[left]
-    low = left
-    high = right
+    i = left
+    j = right
+    key = array[i]
     # 循环参考点直到遍历全部
-    while left<right:
-        while left<right and array[right]>=key:
-            right-=1
-        array[left] = array[right]
-        while left<right and array[left]<=key:
-            left+=1
-        array[right] = array[left]
-    array[left] = key
-    quick_sort(array,low,left-1)
-    quick_sort(array, left+1, high)
+    while i<j:
+        while i<j and array[j]>=key:
+            j-=1
+        array[i] = array[j]
+        while i<j and array[i]<=key:
+            i+=1
+        array[j] = array[i]
+    array[i] = key
+    quick_sort(array,left,i-1)
+    quick_sort(array, i+1, right)
     return array
 array = quick_sort(a,0,len(a)-1)
 print(a)
