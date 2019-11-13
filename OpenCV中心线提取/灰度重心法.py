@@ -35,17 +35,16 @@ def Gravity(img):
     cv2.imshow("origin",img)
     cv2.imshow("lineimage",lineimage)
     cv2.imshow("centerLine",newimage)
-def GravityPlus(img):
+def GravityPlus(img,thresh):
     row, col, chanel = img.shape
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    points = []
+    points = np.zeros((col,2))
     newimage = np.zeros((row, col), np.uint8)
     for i in range(col):
         Pmax = np.max(gray[:, i])
-        Pmin  = np.min(gray[:, i])
-        if Pmax==Pmin:
+        #Pmin  = np.min(gray[:, i])
+        if Pmax<thresh:
             continue
-        #print("Pmax",Pmax)
         pos = np.argwhere(gray[:,i]>=(Pmax-5))
         #print("pos",pos)
         length = len(pos)
@@ -56,7 +55,8 @@ def GravityPlus(img):
                 sum_top += p*gray[p,i]
                 sum_down+=gray[p,i]
             Prow = sum_top/sum_down
-            points.append([Prow[0],i])
+            points[i]=[Prow[0],i]
+    print(points)
     for p in points:
         #print(p)
         pr,pc = map(int,p)
@@ -67,6 +67,35 @@ def GravityPlus(img):
     cv2.imshow("Plus_origin",img)
     cv2.imshow("Plus_centerLine",newimage)
     return points
-img = cv2.imread("laser-v.jpg")
-Gravity(img)
+def GravityPlusK(img,thresh,k):
+    row, col, chanel = img.shape
+    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    points = np.zeros((col,2))
+    newimage = np.zeros((row, col), np.uint8)
+    for i in range(col):
+        posMax = np.argmax(gray[:, i])
+        Pmax = gray[posMax, i]
+        #Pmin  = np.min(gray[:, i])
+        if Pmax<thresh:
+            continue
+        sumPix = 0
+        sumVal = 0
+        for index in range(-k,k):
+            sumPix+=gray[posMax+index,i]*(posMax+index)
+            sumVal+=gray[posMax+index,i]
+        valCenter =sumPix/sumVal
+        points[i]=[valCenter,i]
+    print(points)
+    for p in points:
+        #print(p)
+        pr,pc = map(int,p)
+        newimage[pr,pc] = 255
+        img[pr,pc,:] = [0,255,0]
+    cv2.namedWindow("Plus_origin",0)
+    cv2.namedWindow("Plus_centerLine",0)
+    cv2.imshow("Plus_origin",img)
+    cv2.imshow("Plus_centerLine",newimage)
+    return points
+img = cv2.imread("image/laser-v.jpg")
+GravityPlus(img,100,)
 cv2.waitKey(0)

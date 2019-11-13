@@ -25,7 +25,12 @@ for fname in images:
         print("corners2",corners2)
         imgpoints.append(corners2)
         #绘制和展示角点,按照颜色来进行划分（7,6），6种颜色
+        #橙红色的为0号点，蓝色的为最后的点集
         img = cv2.drawChessboardCorners(img,(7,6),corners2,ret)
+        for i,p in enumerate(corners2):
+            x = int(p[0][0])
+            y = int(p[0][1])
+            cv2.putText(img,str(i),(x,y),cv2.FONT_HERSHEY_SIMPLEX,0.5,(255,255,255),2)
         cv2.imshow(fname,img)
 rmse, mtx, dist, rvecs, tvecs = cv2.calibrateCamera(objpoints, imgpoints, gray.shape[::-1], None, None)
 h,w = gray.shape[:2]
@@ -54,6 +59,11 @@ print("----------------")
 print(ret)
 print("-----------")
 print(mtx)
+print("-----------")
+matinv = np.linalg.inv(mtx)
+print(matinv)
+print("################################")
+print(np.dot(mtx,matinv))
 mean_error = 0
 for i in range(len(objpoints)):
     imgpoints2, _ = cv2.projectPoints(objpoints[i], rvecs[i], tvecs[i], mtx, dist)

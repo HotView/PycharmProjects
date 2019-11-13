@@ -8,6 +8,9 @@ num_line = 6
 num_point = 9
 objp = np.zeros((num_line*num_point,3),np.float32)
 objp[:,:2] = np.mgrid[0:num_point,0:num_line].T.reshape(-1,2)
+print("###################################################")
+print(objp)
+print("###################################################")
 # Arrays to store object points and points from all the images.
 objpoints = []
 imgpoints = []

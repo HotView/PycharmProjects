@@ -22,6 +22,12 @@ def cross_point(line1,line2):
     y = k1*x+b1
     return x,y
 def point_3_index(cross_point,line_points):
+    """
+    找出距离交点最近的三个点的索引序号
+    :param cross_point:
+    :param line_points:
+    :return:
+    """
     cross_point = np.array(cross_point)
     distxy = np.square(line_points-cross_point)
     dist = np.sum(distxy,axis=1)
@@ -59,8 +65,9 @@ def get3dPoints(laserline,corners,objp):
         l = 1
         solution_x = l / (2 * K - 1)
         B_3d = objp[i][index_neighbor[0]] * l
-        # 角点生成的顺序是按照X轴递增的顺序生成的，靶标坐标系中对应点的X分量也是递增的
-        # 所以可以根据A,C点在角点序列中的位置来判断，AC方向的分量在坐标轴中是递增的还是递减的
+        # 在标定板坐标系中，角点的生成顺序是按X，Y轴递增的顺序来进行标号
+        # 所以可以根据A,C点在角点标号的大小来判断，如果A点标号小于C点，则是按照交点在B点的右侧，AC方向为正向
+        # 如果A点标号大于C点，则是按照交点在B点的左侧，AC方向为负向
         if index_neighbor[2]>index_neighbor[1]:
             point_3d = [B_3d[0]-solution_x,B_3d[1],B_3d[2]]
         else:

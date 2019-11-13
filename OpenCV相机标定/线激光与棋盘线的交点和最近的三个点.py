@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
 from scipy.optimize import curve_fit
-
-
 def distance(vec1,vec2):
     dist = np.sqrt(np.sum(np.square(vec1 - vec2)))
     return dist
@@ -22,6 +20,13 @@ def corss_point(line1,line2):
     y = k1*x+b1
     return x,y
 def point_3_index(cross_point,points):
+    """
+    通过给定交点和标定板上一行线上的点，来确定最最近的三个点进行交比不变，来计算其三维坐标位置
+    返回值是按顺序的点的索引
+    :param cross_point:
+    :param points:
+    :return:
+    """
     cross_point = np.array(cross_point)
     #print(cross_point,"#")
     #print(points)
@@ -41,7 +46,7 @@ def point_3_index(cross_point,points):
         index[0] = index[1]
         index[1] = tmp
     return index
-
+#求取激光线和每一行的方块的交点，然后提取最近的三个点的坐标
 criteria = (cv2.TERM_CRITERIA_EPS+cv2.TERM_CRITERIA_MAX_ITER,30,0.001)
 objp = np.zeros((6*7,3),np.float32)
 objp[:,:2] = np.mgrid[0:7,0:6].T.reshape(-1,2)

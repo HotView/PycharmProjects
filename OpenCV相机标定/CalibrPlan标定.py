@@ -3,8 +3,9 @@ import numpy as np
 import matplotlib.pyplot as plt
 from mpl_toolkits.mplot3d import Axes3D
 from OpenCV相机标定.FitPlane import getFitplane
-
+#读取每幅图片相对于标定板的位姿
 poses = np.load("../camera/poses.npz")["poses"]
+#读取在标定板坐标系中点（线激光和标定板的线）的坐标
 points3dp = np.load("../camera/planepoints3d.npz")["points3dp"]
 a,b,c = points3dp.shape
 ones = np.ones((a,b,1))
@@ -17,6 +18,7 @@ for i in range(a):
     homo_point3d = homo_points3d[i].T
     #print(homo_point3d.shape)
     tranmat = poses[i]
+    #计算相机坐标系下点的坐标
     point3dc = np.dot(tranmat,homo_point3d).T
     all_points.append(point3dc)
     print(point3dc)

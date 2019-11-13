@@ -20,6 +20,11 @@ def transitions(neighbours):
     n = neighbours + neighbours[0:1]  # P2, ... P9, P2
     return sum((n1, n2) == (0, 1) for n1, n2 in zip(n, n[1:]))
 def ZhangSuenPlus(image):
+    """
+    运行时间55s
+    :param image:
+    :return:
+    """
     changing1 = changing2 = [(-1, -1)]
     while changing1 or changing2:
         # Step 1
@@ -146,6 +151,13 @@ def ZhangSuenPlus03(image):
     return image
 
 def ZhangSuen_Bad(img):
+    """
+    将灰度值转化为0和1，企图加速计算过程
+    运行时间21.28s
+    thresh计算失败
+    :param img:
+    :return:
+    """
     copyMat = img.copy()
     k = 0
     row,col= img.shape
@@ -221,6 +233,11 @@ def ZhangSuen_Bad(img):
     return resImg
 
 def ZhangSuen(img):
+    """
+    运行时间20.7s
+    :param img:
+    :return:
+    """
     #indexXY = np.argwhere(img>0)
     #minxy = np.min(indexXY,axis=0)
     #maxxy = np.max(indexXY,axis=0)
@@ -299,7 +316,7 @@ time1 = time.time()
 #res= ZhangSuen(thresh)
 time2 = time.time()
 #resP= ZhangSuenPlus(thresh)
-resP2 = ZhangSuenPlus02(thresh)
+resP2 = ZhangSuen_Bad(thresh)
 #resroi = ZhangSuen_Bad(thresh)
 time3 =time.time()
 cv2.namedWindow("thresh",0)
